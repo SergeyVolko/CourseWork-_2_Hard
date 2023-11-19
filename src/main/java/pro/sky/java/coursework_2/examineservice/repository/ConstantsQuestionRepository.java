@@ -1,13 +1,11 @@
-package pro.sky.java.coursework_2.examineservice.service.constants;
+package pro.sky.java.coursework_2.examineservice.repository;
 
 import pro.sky.java.coursework_2.examineservice.domain.Question;
 
 import java.util.Collection;
 import java.util.Set;
 
-public class ConstantsQuestionService {
-    public static final int AMOUNT = 5;
-    public static final int WRONG_AMOUNT = 21;
+public class ConstantsQuestionRepository {
     public static final String QUESTION1 = "question1";
     public static final String QUESTION2 = "question2";
     public static final String QUESTION3 = "question3";
@@ -42,18 +40,6 @@ public class ConstantsQuestionService {
 
     public static final Collection<Question> QUESTIONS_ALL = Set.of(
             QUESTION_OBJ1,
-            QUESTION_OBJ2,
-            QUESTION_OBJ3,
-            QUESTION_OBJ4,
-            QUESTION_OBJ5,
-            QUESTION_OBJ6,
-            QUESTION_OBJ7,
-            QUESTION_OBJ8,
-            QUESTION_OBJ9,
-            QUESTION_OBJ10
-    );
-
-    public static final Collection<Question> QUESTIONS_NOT_FIRST = Set.of(
             QUESTION_OBJ2,
             QUESTION_OBJ3,
             QUESTION_OBJ4,
@@ -107,13 +93,5 @@ public class ConstantsQuestionService {
             MATH_QUESTION_OBJ8,
             MATH_QUESTION_OBJ9,
             MATH_QUESTION_OBJ10
-    );
-
-    public static final Collection<Question> MATH_JAVA_QUESTIONS = Set.of(
-            QUESTION_OBJ1,
-            MATH_QUESTION_OBJ1,
-            QUESTION_OBJ2,
-            MATH_QUESTION_OBJ2,
-            QUESTION_OBJ3
     );
 }

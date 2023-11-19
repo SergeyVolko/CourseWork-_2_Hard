@@ -9,13 +9,15 @@ import pro.sky.java.coursework_2.examineservice.repository.QuestionRepository;
 import java.util.*;
 
 @Service
-public class JavaQuestionService implements QuestionService {
+public class MathQuestionService implements QuestionService {
     private static final Random RANDOM = new Random();
     private final QuestionRepository repository;
-    private List<Question> shuffleQuestion = new LinkedList<>();
+
+    private  List<Question> shuffleQuestion = new LinkedList<>();
     private boolean isChanged = false;
+
     @Autowired
-    public JavaQuestionService(@Qualifier("javaQuestionRepository") QuestionRepository repository) {
+    public MathQuestionService(@Qualifier("mathQuestionRepository") QuestionRepository repository) {
         this.repository = repository;
     }
 
